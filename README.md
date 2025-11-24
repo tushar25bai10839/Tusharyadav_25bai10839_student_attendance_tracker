@@ -1,4 +1,4 @@
-# Tusharyadav_25bai10839_student_attendance_tracker
+# Tusharyadav_25bai10839_calculator 
 
 Tkinter Calculator
 
