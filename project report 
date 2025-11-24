@@ -1,0 +1,201 @@
+Project Report: Tkinter-Based Calculator Application
+
+1. Introduction
+
+The Calculator Application is a Python-based GUI project created using the Tkinter library.
+The goal of this project is to design a simple, visually clean, and fully functional calculator that performs basic arithmetic operations such as addition, subtraction, multiplication, and division. In addition to this, the calculator also supports square and square-root operations.
+
+This project demonstrates GUI development concepts, event handling, grid layout management, class-based program structure, and basic expression evaluation in Python.
+
+2. Objectives
+
+The main objectives of this project are:
+
+To develop a user-friendly calculator interface using Tkinter.
+
+To implement basic arithmetic operations.
+
+To provide additional features such as squaring and square root calculation.
+
+To integrate keyboard bindings for faster user interaction.
+
+To follow clean coding practices using a class-based structure.
+
+3. Tools and Technologies
+
+Component	Description
+
+Programming Language	Python
+GUI Framework	Tkinter (Python’s standard GUI toolkit)
+IDE (Optional)	VS Code / PyCharm / IDLE
+OS Compatibility	Works on Windows, Mac, and Linux
+
+4. System Requirements
+
+Hardware Requirements
+
+Minimum 2GB RAM
+
+Basic CPU (Dual-core or higher)
+
+50MB free storage
+
+
+Software Requirements
+
+Python 3.x installed
+
+Tkinter library (comes default with Python)
+
+5. Project Description
+
+The project is built around a single class named Calculator, which organizes all UI components and functionalities.
+The calculator contains:
+
+A display frame showing the total and current expressions
+
+Digit buttons (0–9 and .)
+
+Operator buttons (+, −, ×, ÷)
+
+Special operation buttons (C, x², √x, =)
+
+Keyboard support for smooth interaction
+
+
+The UI uses a clean color palette and simple fonts to keep the interface intuitive and visually appealing.
+
+
+6. Working Principle
+
+a. Display Handling
+
+There are two labels:
+
+1. Total Expression Label: Shows the full mathematical expression entered.
+
+
+2. Current Expression Label: Shows the current number or result being typed.
+
+
+
+These labels update dynamically whenever the user enters digits or operators.
+
+
+b. Button Functionality
+
+Digit Buttons: Add the selected digit to the current expression.
+
+Operator Buttons: Append an operator and shift the current expression into the total expression.
+
+Equals Button: Evaluates the full expression using Python’s eval() function.
+
+Clear Button: Resets both current and total expressions.
+
+Square & Square Root Buttons: Perform respective mathematical transformations.
+
+
+
+c. Keyboard Bindings
+
+The app supports:
+
+Number keys (0–9)
+
+Operator keys (+, -, *, /)
+
+Enter key for evaluating the expression
+
+
+Keyboard input triggers the same internal functions as button clicks.
+
+
+7. Code Structure
+
+Class: Calculator
+
+Method	Purpose
+
+__init__	Initializes UI, frames, buttons, and binds keys
+create_display_frame	Creates the area for the expressions
+create_display_labels	Creates labels for total & current expression
+create_buttons_frame	Layout container for button grid
+create_digit_buttons	Generates buttons for digits 0–9 and “.”
+create_operator_buttons	Generates operator buttons
+create_special_buttons	Creates C, =, x², √x buttons
+add_to_expression	Appends digits to current expression
+append_operator	Appends operators to expression
+evaluate	Executes the expression using eval()
+update_label	Updates the current-expression display
+update_total_label	Updates the full-expression display
+run	Starts the Tkinter main loop
+
+8. User Interface Layout
+
+The UI uses Tkinter’s Grid Layout:
+
+5 rows × 4 columns
+
+Operator buttons are aligned vertically
+
+Digits arranged like a real calculator keypad
+
+“=” button spans two columns for better usability
+
+
+Colors are chosen to provide a soft, modern interface:
+
+Light grey for display
+
+White for digits
+
+Light blue for equals
+
+Off-white for function keys
+
+
+9. Advantages of the Application
+
+Easy to use and visually appealing
+
+Lightweight and fast
+
+Works across all platforms
+
+Keyboard support increases speed
+
+Code is modular and extendable
+
+Ideal for beginners learning Tkinter and GUI programming
+
+10. Limitations
+
+Uses Python’s eval(), which must be handled carefully
+
+Does not support advanced scientific functions
+
+No parentheses functionality
+
+No input validation for complex or malformed expressions
+
+11. Future Enhancements
+
+Potential improvements include:
+
+Adding percentage (%) function
+
+Implementing backspace
+
+Adding parentheses support
+
+Enhancing UI with themes
+
+Implementing advanced scientific operations
+
+Adding calculation history panel
+
+
+12. Conclusion
+
+The Tkinter Calculator Project successfully demonstrates how Python can be used to create interactive GUI applications.
+It is simple yet functional, combining clean design, essential mathematical operations, and user-friendly features like keyboard input. The project also provides a solid foundation for extending the calculator into a more advanced scientific or programmable tool.
